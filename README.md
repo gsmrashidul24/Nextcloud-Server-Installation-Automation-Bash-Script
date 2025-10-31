@@ -3,8 +3,6 @@
 # ======================
 #
 #
-#
-#
 # Nextcloud + Cloudflared
 # AUTO INSTALLER DOCUMENTATION
 # ===================================
