@@ -2,7 +2,7 @@
 
 # Nextcloud + Cloudflared
 # AUTO INSTALLER DOCUMENTATION
-# *****************************
+# **********************************
 
 
 # Created by Rasel-Tech
