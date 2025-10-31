@@ -1,0 +1,43 @@
+
+#						 UBUNTU-SERVER SSH+FIREWALL SETUP COMMANDS
+#				 	  ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+
+#								Ubuntu-Server Setup For NextCloud Installation
+#								**********************************************
+
+#															Created by Rasel-Tech
+#									   Compatible with: Ubuntu 22.04 / 24.04
+#										************************************
+
+
+
+#	 Complete This Proccess Before Installing  NextCloud Server:
+# 	*********************************************************
+
+# server IP check=>
+★ip a | grep inet
+
+# package update & ssh installing=>
+★sudo apt update
+★sudo apt install openssh-server -y
+
+# SSH start=>
+★sudo systemctl start ssh
+
+# ssh enable=>
+★sudo systemctl enable ssh
+
+# SSH service status check=>
+★sudo systemctl status ssh
+
+# UFW এ SSH (port 22) allow=>
+★sudo ufw allow 22/tcp
+
+# UFW enable force=>
+★sudo ufw --force enable
+
+# UFW status check=>
+★sudo ufw status
+
+

@@ -1,0 +1,76 @@
+
+#												NEXTCLOUD SETUP COMMANDS
+#											 ★★★★★★★★★★★★★★★★★★
+
+
+#						 			Nextcloud + Cloudflared AUTO INSTALLER
+#				 				   *****************************************
+
+
+#																Created by Rasel-Tech
+#									  	 Compatible with: Ubuntu 22.04 / 24.04
+#											************************************
+
+
+
+#	 Complete This Proccess Before Installing  NextCloud Server:
+# 	*********************************************************
+
+
+
+# 	Nextcloud Installation Script Create & Run:-
+# 	*****************************************
+
+# create bash script on server=>
+★nano nextcloud-install.sh
+# → paste it entire bash script commands here
+
+# then save it==>
+★ Ctrl+O → Enter → Ctrl+X then save it.
+
+# then, make it executable==>
+★chmod +x nextcloud-install.sh
+
+# script installation command using tmux fallback if connection aborted=>
+
+# package update & installing tmux=>
+★sudo apt update
+★sudo apt install -y tmux
+
+# script run command jsing tmux shell=>
+★tmux new -s nextcloud-install
+★sudo bash ./nextcloud-install.sh
+
+# If You Exit to tmux run this command=>
+★Exit
+
+
+# 							Cloudflare Api Fallback
+# 							**********************
+
+
+#	If Fallback Cloudflare Api Then Create Json File:-
+#	 *********************************************
+
+#
+#
+#
+#
+#
+
+#	After Created .Json File Then Use This Instructions:-
+#	************************************************
+
+#If Cloudflare api not working then create manually Cloudflare json file
+# and paste this windows path (C:\Users\Rasel\Downloads\.json)
+
+# windows to server json file upload command=>
+★scp C:\Users\Rasel\Downloads\nextcloud-tunnel.json (example: rasel@192.168.1.100):/tmp/
+
+# after upload completed then set .json file permission on server=>
+★sudo chown root:root /tmp/nextcloud-tunnel.json
+★sudo chmod 600 /tmp/nextcloud-tunnel.json
+
+# Then go to installation terminal and paste this Server copeid json path=>
+★tmp/nextcloud-tunnel.json
+
