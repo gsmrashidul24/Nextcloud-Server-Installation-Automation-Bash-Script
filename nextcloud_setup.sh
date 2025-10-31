@@ -8,17 +8,17 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-#												NEXTCLOUD SETUP COMMANDS
-#											 ★★★★★★★★★★★★★★★★★★
+#											NEXTCLOUD SETUP COMMANDS
+#									 	    ★★★★★★★★★★★★★★★★
 
 
 #						 			Nextcloud + Cloudflared AUTO INSTALLER
 #				 				   *****************************************
 
 
-#																Created by Rasel-Tech
-#									  	 Compatible with: Ubuntu 22.04 / 24.04
-#											************************************
+#											Created by Rasel-Tech
+#									Compatible with: Ubuntu 22.04 / 24.04
+#									=====================================
 
 																																												
 # Features & Highlights:
