@@ -2,12 +2,12 @@
 
 # Nextcloud + Cloudflared
 # AUTO INSTALLER DOCUMENTATION
-# **********************************
+# *************************************
 
 
 # Created by Rasel-Tech
 # Compatible with: Ubuntu 22.04 / 24.04
-# *************************************
+# **************************************
 
 
 📘 Nextcloud + Cloudflared Auto Installer Script বিশ্লেষণ রিপোর্ট
